@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Information about the private Hermes Google Drive integration and its use of Google Drive data.">
+<title>Hermes Google Drive — App information</title>
+<style>body{font-family:system-ui,sans-serif;line-height:1.65;color:#17202b;background:#fafafa;margin:0}main{max-width:48rem;margin:auto;padding:2.5rem 1.25rem 4rem}nav{display:flex;gap:1.5rem;margin-bottom:2rem}a{color:#064b9b;text-underline-offset:.18em}h1,h2{line-height:1.2}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:2rem}code{overflow-wrap:anywhere;font-size:.92em}.date{color:#526171}footer{margin-top:3rem;border-top:1px solid #cdd4dc;padding-top:1rem;font-size:.92rem}a:focus-visible{outline:3px solid #064b9b;outline-offset:4px}</style>
+</head>
+<body>
+<main>
+<nav aria-label="Main"><a href="./">App information</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>Hermes Google Drive</h1>
+<p>Hermes Google Drive is a private, owner-operated integration that lets a local AI assistant work with the owner's Google Drive files and Google Docs. It supports finding relevant information, preparing documents and managing files as part of tasks the owner requests or authorizes.</p>
+<p>This site provides app and privacy information. It does not run the assistant, offer public registration, collect credentials or provide a Google sign-in button. Authorization starts from the installed local application and takes place on Google's own consent page.</p>
+<h2>What the integration does</h2>
+<ul>
+<li>Search for task-relevant files and read their metadata or supported text content.</li>
+<li>Create files and folders, update supported content, rename or move files, and append or replace text in Google Docs.</li>
+<li>Move files to Trash or restore them. Permanent deletion is a separate operation used only when that outcome is explicitly intended.</li>
+</ul>
+<p>The integration requests the Google Drive permission <code>https://www.googleapis.com/auth/drive</code>. This is broad access to the authorized account's Drive files, including reading, creating, changing and deleting them; it is not restricted by OAuth to a single folder. The assistant is instructed to retrieve and change only what is relevant to the authorized task. The integration does not request Gmail, Calendar or Contacts permissions.</p>
+<h2>How information is handled</h2>
+<p>The Drive connection runs locally and keeps its authorization credentials in the owner's private runtime storage. Selected file contents and metadata can become part of AI prompts, task records and private knowledge or memory. The configured AI provider may process those excerpts remotely. Authorized outputs can be written back to Drive, and retained workspace records may be included in the owner's private backups.</p>
+<p>Read the <a href="privacy.html">privacy policy</a> for data access, AI processing, retention and removal details.</p>
+<h2 id="personal-use">Personal use and administration</h2>
+<p>This installation is maintained by its account owner for their own authorized work. The account owner manages access, configuration and deletion from the local application and Google Account settings. There is no public service or staffed support desk.</p>
+<p>The integration is independently maintained. This page does not represent Google or the upstream Hermes project, and publishing these information pages does not claim Google verification or endorsement.</p>
+<footer>Hermes Google Drive &middot; Private, owner-operated integration.</footer>
+</main>
+</body>
+</html>

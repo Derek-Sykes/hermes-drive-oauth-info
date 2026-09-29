@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How the private Hermes Google Drive integration accesses, processes, stores and removes Google Drive data.">
+<title>Hermes Google Drive — Privacy policy</title>
+<style>body{font-family:system-ui,sans-serif;line-height:1.65;color:#17202b;background:#fafafa;margin:0}main{max-width:48rem;margin:auto;padding:2.5rem 1.25rem 4rem}nav{display:flex;gap:1.5rem;margin-bottom:2rem}a{color:#064b9b;text-underline-offset:.18em}h1,h2{line-height:1.2}h1{font-size:2rem}h2{font-size:1.3rem;margin-top:2rem}code{overflow-wrap:anywhere;font-size:.92em}.date{color:#526171}footer{margin-top:3rem;border-top:1px solid #cdd4dc;padding-top:1rem;font-size:.92rem}a:focus-visible{outline:3px solid #064b9b;outline-offset:4px}</style>
+</head>
+<body>
+<main>
+<nav aria-label="Main"><a href="./">App information</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>Privacy policy</h1>
+<p class="date">Hermes Google Drive &middot; Last updated September 29, 2026</p>
+<p>This policy describes the private, owner-operated Hermes Google Drive integration and these public information pages. The local installation is administered by the same person who authorizes its Google account.</p>
+<h2>Data accessed and purpose</h2>
+<p>With the owner's consent, the integration uses Google's Drive and Docs APIs to find, read, create, edit, organize, trash, restore or explicitly permanently delete files needed for authorized tasks. Access includes file names, identifiers, types, descriptions, folder relationships, versions and timestamps, plus selected supported file or document contents. The account email address is checked and retained to confirm that the connection uses the account authorized during setup; Google account display information may be returned during that check.</p>
+<p>The requested <code>https://www.googleapis.com/auth/drive</code> permission is broad Drive access, not a permission limited to selected folders. Task instructions limit ordinary retrieval and actions to relevant material. The helper does not automatically mirror all of Drive, change sharing permissions or request Gmail, Calendar or Contacts scopes.</p>
+<h2>AI processing and other transfers</h2>
+<p>Selected Drive content and metadata may be provided to the assistant and its delegated agents to answer questions, reason about a task, create outputs or verify changes. The configured model service, currently OpenAI in this installation, may receive these excerpts and related prompts. Its processing and retention depend on the applicable account terms and data controls; this integration does not promise local-only processing or zero retention by external services.</p>
+<p>Google receives API requests and data written back to Drive. Task records, selected source material, outputs and learned context may be retained in the owner's private workspace and included in owner-configured private backups, including private GitHub storage. This does not make those records public. No automatic public publication is part of the Drive helper.</p>
+<p>The integration uses Google data to carry out the owner's requested or authorized assistant features. It does not sell Google data or use it for advertising, data brokerage or credit scoring. It does not itself train or fine-tune models. The owner must select model-service settings and terms appropriate for this data; this page does not assert that an external provider's account controls have been independently audited.</p>
+<h2>Authorization and credential storage</h2>
+<p>Authorization uses Google's browser-based OAuth flow with a local callback. The helper does not copy browser cookies or request the Google account password. OAuth client information, an access token, a refresh token and the authorized account identifier are saved in private local runtime files so access can be renewed without signing in for each task. These credentials are intended to remain outside knowledge bases, source repositories and backup manifests.</p>
+<p>The helper uses HTTPS for Google API requests and avoids logging credential and OAuth response bodies. Local filesystem protections are part of the installation. These measures do not constitute a guarantee against every disclosure or security incident.</p>
+<h2>Retention and removal</h2>
+<p>There is no automatic expiration period for all retained task records or knowledge. The owner manages local files, assistant history, organizational memory and backup retention. Selected content or derived notes can remain in those places until removed, including older private backup copies. AI-provider and Google retention is governed separately by those services and the account's settings.</p>
+<p>The owner can stop future authorized access by removing this application's connection in <a href="https://myaccount.google.com/connections">Google Account third-party connections</a> and removing the local integration's saved OAuth credentials. Revoking access does not erase previously retrieved content, generated outputs, task history or backups. To remove those copies, the owner must also delete the relevant local records and address any retained copies with the applicable storage or model provider. Drive files can be managed directly in Google Drive; Trash and permanent deletion have different consequences.</p>
+<h2>These public pages</h2>
+<p>These pages have no forms, JavaScript, embedded media, analytics or advertising added by this integration. They do not receive Drive content or OAuth credentials. When served by GitHub Pages, GitHub processes visitor information such as IP addresses for hosting and security under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Following a link to another service is subject to that service's own practices.</p>
+<h2>Administration and policy changes</h2>
+<p>For this single-owner installation, the account owner handles privacy questions, access changes and data removal through their local workspace and Google Account controls. The app is not available for public account registration. If the integration's data use changes, this policy and the owner's disclosures must be updated before the new use begins, with additional consent where required.</p>
+<p>Google API data handling is subject to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. This policy describes the integration's operation; it is not a claim of Google verification, endorsement or a security audit.</p>
+<footer>Hermes Google Drive &middot; Private, owner-operated integration.</footer>
+</main>
+</body>
+</html>
